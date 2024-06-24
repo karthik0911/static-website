@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">Tourism</h1>
+                <p class="paragraph">Plan your trip.</p>
+                <button class="button" onclick="display('sectionFavouriteplaces')">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFavouriteplaces">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Favourite Places</h1>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajmahalDetailedview')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+                    <p class="favourite-place-card-description">
+                        If there was just one symbol to represent all of India, it would be the
+                        Taj Mahal
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionGoldenTempleDetailview')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Golden Temple</h1>
+                    <p class="favourite-place-card-description">
+                        Amritsar is world-famous for the beautiful and highly revered Golden
+                        Temple
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionMysorePalaceDetailview')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Mysore Palace</h1>
+                    <p class="favourite-place-card-description">
+                        The Mysore Palace is a historical palace and the royal residence at
+                        Mysore .
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionVaranasiTempleDetailview')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+                    <p class="favourite-place-card-description">
+                        Kashi Vishwanath Temple is a Hindu temple dedicated to Shiva. It is located in Vishwanath Gali, in Varanasi, Uttar Pradesh, India.
+                         The temple is a Hindu pilgrimage site and is one of the twelve Jyotirlinga shrines.
+                    </p>
+                </div>
+                <img src="https://t3.ftcdn.net/jpg/00/52/13/02/240_F_52130287_B9UjW8keRJKChSGRsx2e6euercf9WK0Y.jpg" class="favourite-place-card-image" />
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHome')">
+                Back
+            </button>
+        </div>
+    </div>
+
+    <div id="sectionTajmahalDetailedview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+                    <p class="detailed-view-card-description">
+                        The Taj Mahal is considered to be the greatest architectural
+                        achievement in the whole range of Indo-Islamic architecture. Its
+                        recognised architectonic beauty has a rhythmic combination of solids
+                        and voids, concave and convex and light shadow; such as arches and
+                        domes further increases the aesthetic aspect. Not a piece of
+                        architecture, as other buildings are, but the proud passions of an
+                        emperor’s love wrought in living stones.
+                    </p>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFavouriteplaces')">
+                    Back
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionGoldenTempleDetailview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://t4.ftcdn.net/jpg/08/14/93/75/240_F_814937544_HRVUXpQNb22ouMCel50zHIQXTjSpkRMH.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://t4.ftcdn.net/jpg/05/23/90/05/240_F_523900578_qlyAU5vlAVPD50RxnDgXwMTh7MilwXhS.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://t4.ftcdn.net/jpg/08/14/93/79/240_F_814937945_bBEyPJri2360pkhF50nNFVMHKL7hEKZQ.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Golden Temple</h1>
+                    <p class="detailed-view-card-description">
+                        The Golden Temple, also known as Harmandir Sahib or Darbar Sahib, 
+                        is a prominent Sikh gurdwara located in Amritsar, Punjab, India. 
+                        It is the most important pilgrimage site of Sikhism and is renowned
+                        for its striking architecture and serene atmosphere. The temple's foundation
+                        was laid in 1581 by the fourth Sikh Guru, Guru Ram Das. The construction was
+                        completed by his successor, Guru Arjan Dev, in 1604.Guru Arjan Dev also installed
+                        the Adi Granth, the holy scripture of Sikhism, inside the temple.
+                        The Golden Temple is open to people of all religions and backgrounds. 
+                        Visitors are expected to cover their heads and remove their shoes before 
+                        entering the temple complex.
+                    </p>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFavouriteplaces')">
+                    Back
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionMysorePalaceDetailview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_Morning.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://karnatakatourism.org/wp-content/uploads/2020/06/Mysuru-Palace-banner-1920_1100.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://karnatakatourism.org/wp-content/uploads/2020/06/mysore-palace-1.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Mysore Palace</h1>
+                    <p class="detailed-view-card-description">
+                        Mysore Palace, also known as Amba Vilas Palace, is a historical palace
+                        located in the city of Mysore in Karnataka, India. It is one of the most famous
+                        tourist attractions in India, known for its grand architecture and historical significance.
+                        Mysore Palace served as the official residence of the Wadiyar dynasty, the royal family of Mysore, 
+                        which ruled the region from 1399 to 1950.The current structure was commissioned in 1897 after the 
+                        old wooden palace was destroyed by fire during a wedding ceremony. The construction was completed 
+                        in 1912 under the supervision of the British architect Henry Irwin.The architecture of Mysore Palace
+                        is a blend of Indo-Saracenic, Hindu, Muslim, Rajput, and Gothic styles. The palace features intricately
+                        carved doors, expansive halls, and beautifully decorated ceilings.Mysore Palace stands as a testament to
+                        the rich cultural heritage and historical legacy of the Mysore kingdom, drawing visitors from all over the
+                        world to marvel at its architectural splendor and historical artifacts.
+                    </p>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFavouriteplaces')">
+                    Back
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionVaranasiTempleDetailview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://t3.ftcdn.net/jpg/00/52/13/02/360_F_52130287_B9UjW8keRJKChSGRsx2e6euercf9WK0Y.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.indiapilgrimtours.com/articles/wp-content/uploads/2018/01/kashi-vishwanath-temple-varanasi.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static.javatpoint.com/tourist-places/images/tourist-places-in-varanasi11.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Varanasi Temple</h1>
+                    <p class="detailed-view-card-description">
+                        Varanasi, also known as Kashi or Benares, is one of the oldest continuously 
+                        inhabited cities in the world and holds immense religious significance in Hinduism.
+                        It is renowned for its numerous temples, the most famous of which include the Kashi Vishwanath Temple,
+                        the Durga Temple, and the Sankat Mochan Hanuman Temple. Below is detailed information about some of the
+                        most prominent temples in Varanasi.It is believed that Varanasi is the first Jyotirlinga to manifest itself.
+                        According to the legend, it was at this place that Shiva (the Hindu god of destruction) manifested as an 
+                        infinite column of light (Jyotirlinga) in front of Brahma (the Hindu god of creation) and Vishnu (the Hindu god of preservation)
+                        when they had an argument about their supremacy.Visiting these temples offers a deep insight into Hindu traditions, rituals, 
+                        and cultural heritage. The vibrant atmosphere, coupled with the city's ancient charm, provides a unique spiritual experience.
+                        Varanasi's temples not only serve as places of worship but also as centers of cultural and historical importance, embodying
+                        the city's timeless spiritual legacy.
+                    </p>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFavouriteplaces')">
+                    Back
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
